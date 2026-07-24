@@ -1,0 +1,26 @@
+name: Calculator
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  Calculator:
+    type: application
+    platform: iOS
+    sources:
+      - Sources/Calculator
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.calculator
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
+    info:
+      path: Sources/Calculator/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
